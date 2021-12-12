@@ -1,0 +1,3 @@
+DATA_PATH = "D:\Work\Storage\VRES\Cricket-Analysis\Data"
+CUT_OFF_YEAR_START = 2000
+CUT_OFF_YEAR_END = 2021
