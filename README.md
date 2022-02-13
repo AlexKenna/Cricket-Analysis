@@ -1,5 +1,5 @@
 # Cricket-Predicting-Player-Performance
-![alt text](https://github.com/AlexKenna/Cricket-Predicting-Player-Performance/blob/main/img/ODI_Batting.jpg?raw=true)
+![Heading Image](https://github.com/AlexKenna/Cricket-Predicting-Player-Performance/blob/main/img/ODI_Batting.jpg?raw=true)
 
 ## Introduction
 Effective player selection is critical for team performance in cricket. This is especially true at the international level, where the best players are selected to represent their nation, largely based on their perceived potential. However, without an accurate method for predicting the performance of batters, selections are often made based on traditional metrics deemed important with little empirical evidence, such as domestic batting averages. This project aims to develop a method for predicting batter performance at the international level based on their domestic careers. In doing so, we will identify and quantify the most important metrics for determining international success. This is achieved through the derivation of a Random Forest model that uses domestic data to predict the batting average of a player in One Day International cricket. The model is fitted based on a subset of domestic metrics determined to be most important through feature selection techniques including recursive feature elimination and clustering. This enables the development of a model that is explainable, efficient, and accurate. Experimentally, the results support the idea that player performance is largely determined by the traditional metrics currently used for player selection. They also provide insight into lesser-known metrics, such as which domestic formats produce better international batsmen and how a batter’s contribution to their team translates to international performance. These results allow us to identify the features of a batter’s domestic career that have the most significant influence on international performance. This has practical implications in team selection, talent identification and player comparison.
@@ -20,8 +20,51 @@ Each of these steps are explored in separate notebooks in the notebooks director
 
 ## Method
 
+### 1. Data Exploration
+
+### 2. Data Cleaning
+
+### 3. Data Summarisation
+
+### 4. Feature Extraction
+
+### 5. Hyperparameter Tuning
+
+### 6. Model Testing
+
 
 ## Results
+
+### Feature Importance
+Using various feature selection techniques, we were able to determine the most important features for model performance. A summary of the most important features is outlined below.
+
+| Domestic Features | 
+| :--- | 
+| Batting Average |
+| Team Run Contribution | 
+| Average Number of Balls Faced | 
+| 50 Rate | 
+| Batting Position | 
+| Team High Scorer Rate | 
+| High Score | 
+| Start Rate (1-49 Runs) | 
+| Not Out Percentage | 
+
+
+### Error Metrics
+To determine the accuracy of the model, three quantitative metrics were used and are recorded below.
+
+| Metric | Score |
+| --- | ----------- |
+| Coefficient of Determination | 0.788 |
+| Mean Absolute Error | 3.684 |
+| Root Mean Squared Error | 4.722 |
+
+
+### Visual Comparison
+To visualise model accuracy, we have plotted each player's true and predicted batting averages in a scatter plot. The close proximity of the points to the main diagonal suggests that the model is reasonably accurate.
+
+![Comparison of True and Predicted Averages](https://github.com/AlexKenna/Cricket-Predicting-Player-Performance/blob/main/img/Comparison_of_True_and_Predicted_Average.jpg?raw=true)
 
 
 ## Acknowledgements
