@@ -21,16 +21,57 @@ Each of these steps are explored in separate notebooks in the notebooks director
 ## Method
 
 ### 1. Data Exploration
+An exploration into the raw data was conducted to gain an understanding of the general data structure. The raw data consisted of 1.1B+ datapoints.
 
 ### 2. Data Cleaning
+Data cleaning occurred according to the findings of the data exploration phase. The following points summarise the cleaning steps that were taken:
+
+* Removal of redundant data
+* Handling missing data
+* Removal of outliers
+* Identification of eligible batters for modelling
+
+After cleaning, the dataset was reduced to ~550M datapoints.
 
 ### 3. Data Summarisation
+The cleaned data was summarised into a 130 feature dataset consisting of 62 batters. For domestic T20, One-Day and Test formats, the following categories of features were determined:
+
+* Batter attributes (e.g., Name)
+* Matches played (e.g., Number of One-Day matches)
+* Wickets (e.g., Frequency out bowled)
+* Runs (e.g., High score)
+* Milestones (e.g., Frequency of 100 runs)
+* Batting Position (e.g., Number of wickets fallen when a batter enters)
+* Batting style (e.g., Strike rate)
+* Team contribution (e.g., Run contributions to their team)
 
 ### 4. Feature Extraction
+From the ~130 feature summary, the 20 most important features were determined. The following feature selection techniques were explored:
+
+* Mean Decrease in Impurity importance
+* Permutation importance (clustered and unclustered)
+* Covariance matrix (feature-feature and feature-target correlation)
+* Sequential feature selection (forward and backward)
+* Recursive feature elimination
 
 ### 5. Hyperparameter Tuning
+Once the feature set was reduced, the hyperparameters of the model were tuned to optimise performance. A random search was performed first to reduce the search space of possible values. Then, a grid search was performed to determine the optimal hyperparameters. The following hyperparameters were investigated:
+
+* Number of trees
+* Maximum number of features to consider at each split
+* Maximum depth of each tree
+* Minimum number of samples to split an internal node
+* Minimum number of samples allowed at each leaf
+* Bootstrapping
 
 ### 6. Model Testing
+Once the final model was obtained, its performance was tested on a validation set according to three measures:
+
+* Coefficient of Determination
+* Mean Absolute Error
+* Root Mean Squared Error
+
+The results of these measures are outlined in the next section.
 
 
 ## Results
