@@ -1,4 +1,4 @@
-# Cricket-Predicting-Player-Performance
+# Predicting Player Performance in Cricket
 ![Heading Image](https://github.com/AlexKenna/Cricket-Predicting-Player-Performance/blob/main/img/ODI_Batting.jpg?raw=true)
 
 ## Introduction
